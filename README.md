@@ -16,14 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Tristan Valkenburg
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw, na een jaar weg van de opleiding moet ik weer even wennen aan coderen
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
- 
+  Ik ga mijn focus leggen op [geen idee eigenlijk nog]
 </details>
 
 
@@ -36,15 +35,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-
+  https://www.insta360.com 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Insta360 Homepage
+  <img src="readme-images/insta360_homepage.png" width="375px" alt="Insta360 Homepage">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Insta360 Productpage, niet goed gecaptured omdat er veel animaties in zitten
+  <img src="readme-images/insta360_productpage.png" width="375px" alt="Insta360 Productpage">
  
 </details>
 
@@ -56,8 +54,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
-
+  - Mensen met een visuele of motorieke beperking kunnen bepaalde Acessibility Features goed gebruiken om het web te surfen.
+  - Veel hedendaagse Websites zijn nog niet goed geoptimaliseerd voor (bijvoorbeeld) een screenreader, dit maakt het lastig voor mensen met een visuele beperking om said website te gebruiken.
+  - high contrast mode kan een dealmaker feature zijn voor visueel beperkte mensen.
+  - het is belangrijk om bijvoorbeeld links grote hitboxes te geven zodat mensen met een motorieke beperking minder nauwkeurig hoeven te klikken.
+  - Iets waar ik eerder nog niet veel gedachten aan had besteed is een optie om Motion te minderen voor prikkelgevoelige users. Dit kan bijvoorbeeld een pauzeknop zijn voor een autoplay video op een homepagina van een webshop.
+  
 </details>
 
 
