@@ -70,13 +70,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images//insta360_wireframe_sketch.jpg" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
@@ -90,7 +84,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Aangezien ik er een jaartje tussenuit was bij CMD had ik wellicht iets meer moeite met opstarten dan mijn nieuwe klasgenoten. Ik moest nog een nieuwe laptop bemachtigen aan het begin van het jaar en daarbovenop moet ik al mijn HTML-, CSS- en JS-kennis (of wat er nog van over is) weer opgraven en losbikken uit de donkere gaten en kieren in mijn hoofd. Dat kost tijd. Al met al heb ik niet de snelste start gemaakt dit jaar, maar ik heb er vertrouwen in dat ik in de loop van de weken wel weer op mijn pootjes terecht zal komen.
 
 
   ### Agenda voor meeting
