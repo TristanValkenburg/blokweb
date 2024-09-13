@@ -1,0 +1,91 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+body {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+header ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	height: 2.5em;
+}
+
+main section:first-of-type{
+	height: 40em;
+	background-image: url(/images/insta360x4Update.webp);
+	background-size: cover;
+	background-position: center;
+	background-repeat: none;
+}
+
+main nav ul{
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0 4em;
+	height: 4em;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	color: #FFF;
+}
+
+main nav ul li{
+	padding: 0 1em;
+}
+
+main nav ul li a{
+	font-style: none;
+	color: #FFF;
+}
+
+main nav ul li:nth-last-of-type(2){
+	margin-left: auto;
+}
+
+main section:first-of-type > a {
+	height: 36em;
+	width: 100vw;
+	background-color: aquamarine;
+}
