@@ -225,8 +225,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  special links:
+  1. changing icon colors
+  https://codepen.io/sosuke/pen/Pjoqqp
+  2. finding matching fonts
+  https://en.m.likefont.com/community/100930128/
+
+  1. https://stackoverflow.com/questions/35269947/how-can-i-align-one-item-right-with-flexbox
+  2. https://developer.mozilla.org/en-US/docs/Web/CSS/object-position
+  3. https://www.w3schools.com/cssref/pr_background-image.php
+  4. https://stackoverflow.com/questions/1014861/is-there-a-css-parent-selector
+  5. https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
+  6. https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6
+  7. https://gomakethings.com/smooth-scrolling-links-with-only-css/
+  8. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+  9. https://stackoverflow.com/questions/30835168/is-there-an-opposite-css-pseudo-class-to-hover
+  10. https://www.w3schools.com/cssref/sel_nth-child.php
 
 </details>

@@ -5,8 +5,15 @@
   box-sizing:border-box;  
 }
 
-
-
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+	display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
 
 
 
@@ -17,6 +24,16 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--color1: #f6f9fe;
+	--color2: #4fabd6;
+	--color3: #d15d3d;
+	--offblack: #080808;
+
+	--blackToWhite: invert(100%) sepia(5%) saturate(22%) hue-rotate(106deg) brightness(104%) contrast(107%);
+
+	--instaLogo: "Baloo Bhaina 2", sans-serif;
+	--header: "Urbanist", sans-serif;
+	--body: "Roboto", sans-serif;
 }
 
 
@@ -31,61 +48,357 @@ body {
 	margin: 0;
 }
 
+* {
+	font-family: var(--body);
+	font-weight: 300;
+	text-decoration: none;
+	color: inherit;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
 p {
 	margin: 0;
 }
 
-ul {
-	list-style: none;
-}
 
-header ul{
+/* HEADER STYLING */
+
+header > ul{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0;
-	padding: 0;
+	padding: 0 5em;
 	height: 2.5em;
+	background-color: var(--color1);
 }
 
-main section:first-of-type{
-	height: 40em;
-	background-image: url(/images/insta360x4Update.webp);
-	background-size: cover;
-	background-position: center;
-	background-repeat: none;
+nav {
+	position: absolute;
+	color: #FFF;
 }
 
-main nav ul{
+nav ul{
+	height: 4em;
+	width: 100vw;
 	display: flex;
 	align-items: center;
 	margin: 0;
 	padding: 0 4em;
-	height: 4em;
+	transition: all .5s;
+}
+
+nav ul:hover {
+	background-color: #FFF;
+	color: #000;
 }
 
 h1 {
 	margin: 0;
 	padding: 0;
-	font-size: 1em;
-	color: #FFF;
+	font-size: 1.5em;
+	font-family: var(--instaLogo);
+	font-weight: 800;
 }
 
-main nav ul li{
-	padding: 0 1em;
+h1 span {
+	font-weight: 400;
 }
 
-main nav ul li a{
-	font-style: none;
-	color: #FFF;
+nav ul li{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	margin: 0 1em;
+	transition: all .05s;
+	border-color: #00000000;
 }
 
-main nav ul li:nth-last-of-type(2){
+nav ul li:hover {
+	border-top: solid .15em #00000000;
+	border-bottom: solid .15em #000;
+}
+
+nav ul li:nth-last-of-type(2){
 	margin-left: auto;
 }
 
-main section:first-of-type > a {
-	height: 36em;
+nav ul li img {
+	height: 1.2em;
+}
+
+nav ul:not(:hover) li img{
+	filter: var(--blackToWhite);
+}
+
+
+
+
+
+header section {
+	display: flex;
+	top: -6.5em;
+	z-index: -10;
 	width: 100vw;
-	background-color: aquamarine;
+}
+
+.carousel {
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+}
+
+.carousel > * {
+	flex: 0 0 auto;
+}
+
+header section div{
+	height: 40em;
+	background-size: cover;
+	background-position: center;
+	background-repeat: none;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr 7fr 1fr;
+	grid-template-rows: 4em auto;
+}
+
+header section div > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-row: 2 / 3;
+}
+
+header section div > a:first-of-type {
+	grid-column: 1 / 2;
+}
+
+header section div > a:last-of-type {
+	grid-column: 3 / 4;
+}
+
+
+
+
+
+
+.arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .2s;
+}
+
+.arrowContainer:not(:hover) .arrow{
+	opacity: 0;
+}
+
+.arrow span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000;
+	opacity: .25;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+}
+
+.arrow:hover span { 
+	opacity: .5;
+}
+
+.arrow img {
+	height: 1.2em;
+	opacity: 1;
+	filter: var(--blackToWhite);
+	position: relative;
+}
+
+/* bigbrain stuff here to make the arrow face the right direction based on the HTML Structure*/
+.arrow img:last-child {
+	right: 1.9em;
+}
+
+.arrow img:first-child{
+	left: 2em;
+	transform: rotate(180deg);
+	z-index: 10;
+}
+
+
+/* show when entering parent - this one works (pretty clever stuff), but is not very practical */
+/* .arrow:has(> *):hover {
+	opacity: 1;
+} */
+
+/* I need to select the parent of the parent of .arrow, but I can't figure out if that's possible. 
+Later, I tried enlarging the hitbox of the arrow's parent to cover the width of the viewport, but this also obstructed all the hyperlinks behind it*/
+/* .arrow:has(> *) {
+	height: inherit;
+	position: absolute;
+	width: 100vw;
+} */
+
+
+
+
+
+
+
+header section div > a:nth-child(2) {
+	grid-column: 2/3;
+	display: flex;
+	flex-direction: column;
+	margin: 0 40vw 3em 0;
+}
+
+header section div > a:nth-child(2) p{
+	margin-top: -.1em;
+	font-family: var(--header);
+	letter-spacing: .02em;
+	font-weight: 700;
+	font-size: 3.5em;
+	color: var(--color1);
+}
+
+header section div > a p:nth-last-of-type(2){
+	margin-top: .5em;
+	font-weight: 400;
+	font-size: 1.5em;
+}
+
+header section div > a p:last-of-type{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3.5em;
+	font-weight: 700;
+	font-size: 1em;
+	color: #000;
+	background-color: var(--color1);
+	height: 3em;
+	width: 12em;
+	border-radius: 1.5em;
+}
+
+#carousel3 a p:first-of-type, #carousel4 a p:first-of-type{
+	margin: -.2em 0 .5em 0;
+	font-size: 2em;
+	font-weight: 500;
+	color: var(--color2);
+}
+
+#carousel4 p {
+	color: #000;
+}
+
+#carousel4 p:last-of-type{
+	color: var(--color1);
+	background-color: #000;
+}
+
+#carousel1 {
+	background-image: url(/images/headerCarousel/carousel1.png);
+}
+
+#carousel2 {
+	background-image: url(/images/headerCarousel/carousel2.png);
+}
+
+#carousel3 {
+	background-image: url(/images/headerCarousel/carousel3.png);
+}
+
+#carousel4 {
+	background-image: url(/images/headerCarousel/carousel4.png);
+}
+
+
+
+
+
+/* MAIN STYLING */
+
+main section:first-of-type {
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr 20fr 1fr;
+	margin: 2em 0;
+}
+
+main section > a:first-of-type {
+	grid-column: 1;
+}
+
+main section> a:last-of-type {
+	grid-column: 3;
+}
+
+main section:first-of-type > ul {
+	grid-column: 2 ;
+	grid-row: 1;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+main section:first-of-type ul li a {
+	height: 8em;
+	width: 8.5em;
+	margin-left: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+main section:first-of-type ul li:first-of-type a{
+	margin-left: -1.5em;
+}
+
+main section:first-of-type ul li a img {
+	height: 64%;
+	transition: all .2s;
+}
+
+main section:first-of-type ul li a:hover img {
+	height: 68%;
+}
+
+main section:first-of-type ul li a p:first-of-type {
+	position: relative;
+	top: .5em;
+	font-family: var(--header);
+	font-size: .8em;
+	font-weight: 600;
+	color: var(--color3);
+	opacity: 0;
+}
+
+main section:first-of-type ul li a.new p:first-of-type {
+	opacity: 1;
+}
+
+main section:first-of-type ul li a p:last-of-type {
+	font-size: .7em;
+	height: 2.2em;
+	text-align: center;
+}
+
+
+
+
+main section:nth-child(1n+2) {
+	margin-top: 4em;
+	padding: 0 4em;
+}
+
+h2 {
+	margin: 0;
+	padding: 0.5em 0;
+	font-size: 2em;
+	color: var(--offblack);
+	font-weight: 550;
 }

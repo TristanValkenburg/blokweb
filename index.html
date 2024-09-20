@@ -1,43 +1,185 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="English">
 	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Tristan">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>BigT</title>
+
+	<!-- baloo font - Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&display=swap" rel="stylesheet">
+
+	<!-- roboto font - Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+	<!-- Urbanist font - Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+	<title>Insta360 Unofficial Store</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="png" href="images/icons/favicon.png">
 </head>
 
 <body>
 	<header>
 		<ul>
-			<li><a href="https://www.insta360.com">insta360.com</a></li>
+			<li><a href="https://www.insta360.com">Insta360.com</a></li>
 			<li><p>Free Shipping on Orders Over €139</p></li>
 			<li><a href=".">Netherlands ( English / € EUR )</a></li>
 		</ul>
+		<nav>
+			<ul>
+				<li><h1>Insta360 <span>Store</span></h1></li>
+				<li><a href=".">Consumer</a></li>
+				<li><a href=".">Professional</a></li>
+				<li><a href=".">Accessories</a></li>
+				<li><a href=".">Services</a></li>
+				<li><a href=".">Enterprise</a></li>
+				<li><a href=".">Refurbished</a></li>
+				<li><a href=".">Shop by Interest</a></li>
+				<li><a href="."><img src="/images/icons/cartIcon.png" alt="go to cart"></a></li>
+				<li><a href="."><img src="/images/icons/accountIcon.png" alt="go to account"></a></li>
+			</ul>
+		</nav>
+		<section class="carousel arrowContainer">
+			<div id="carousel1" >
+				<a href="#carousel4" class="arrow"><span></span><img src="/images/icons/arrowIcon.png"></a>
+				<a href=".">
+					<p>Insta360 X4</p>
+					<p>Cycling Bundles</p>
+					<p>New cycling perspectives, unlocked.</p>
+					<p>SHOP NOW</p>
+				</a>
+				<a href="#carousel2" class="arrow"><img src="/images/icons/arrowIcon.png"><span></span></a>
+			</div>
+			<div id="carousel2">
+				<a href="#carousel1" class="arrow"><span></span><img src="/images/icons/arrowIcon.png"></a>
+				<a href=".">
+					<p>3 NEW X4</p>
+					<p>Motorcycle Bundles</p>
+					<p>More ways to capture epic footage of your rides!</p>
+					<p>SHOP NOW</p>
+				</a>
+				<a href="#carousel3" class="arrow"><img src="/images/icons/arrowIcon.png"><span></span></a>
+			</div>
+			<div id="carousel3">
+				<a href="#carousel2" class="arrow"><span></span><img src="/images/icons/arrowIcon.png"></a>
+				<a href=".">
+					<p>UPDATE</p>
+					<p>Insta360 X4</p>
+					<p>Easier 360° editing starts here.</p>
+					<p>BUY NOW</p>
+				</a>
+				<a href="#carousel4" class="arrow"><img src="/images/icons/arrowIcon.png"><span></span></a>
+			</div>
+			<div id="carousel4">
+				<a href="#carousel3" class="arrow"><span></span><img src="/images/icons/arrowIcon.png"></a>
+				<a href=".">
+					<p>NEW ARRIVAL</p>
+					<p>Insta360 GO 3S</p>
+					<p>Your tiny mighty 4K cam.</p>
+					<p>BUY NOW</p>
+				</a>
+				<a href="#carousel1" class="arrow"><img src="/images/icons/arrowIcon.png"><span></span></a>
+			</div>
+		</section>
 	</header>
 
 	<main>
+		<section class="arrowContainer">
+			<a href="#productCarouselLeft" class="arrow"><span></span><img src="/images/icons/arrowIcon.png"></a>
+			<ul class="carousel">
+				<li id="productCarouselLeft"><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/x4.webp" alt="Product Picture of the Insta360 X4">
+					<p>Insta360 X4</p>
+				</a></li>
+				<li><a href="." class="new">
+					<p>NEW</p><img src="/images/productCarousel/flowPro.webp" alt="Product Picture of the new Insta360 Flow Pro">
+					<p>Insta360 Flow Pro</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/go3s.webp" alt="Product Picture of the Insta360 GO 3S">
+					<p>Insta360 GO 3S</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/ace.webp" alt="Product Picture of the Insta360 Ace Pro and Insta360 Ace">
+					<p>Insta360 Ace Pro <br> Insta360 Ace</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/x3.webp" alt="Product Picture of the Insta360 X3">
+					<p>Insta360 X3</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/go3.webp" alt="Product Picture of the Insta360 Go 3">
+					<p>Insta360 Go 3</p>
+				</a></li>
+				<li><a href="." class="new">
+					<p>NEW</p><img src="/images/productCarousel/connect.png" alt="Product Picture of the New Insta360 Connect">
+					<p>Insta360 Connect</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/Flow.webp" alt="Product Picture of the Insta360 Flow">
+					<p>Insta360 Flow</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/oneRs.webp" alt="Product Picture of the Insta360 ONE RS">
+					<p>Insta360 ONE RS</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/oneRs1.webp" alt="Product Picture of the Insta360 ONE RS 1-Inch 360">
+					<p>Insta360 ONE RS <br> 1-Inch 360</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/accessories.webp" alt="Product Picture of various Accessories ">
+					<p>Accessories</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/x2.webp" alt="Product Picture of the Insta360 ONE X2">
+					<p>Insta360 ONE X2</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/link.webp" alt="Product Picture of the Insta360 Link">
+					<p>Insta360 Link</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/flexicare.webp" alt="FlexiCare Logo">
+					<p>FlexiCare</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/care.webp" alt="Care Logo">
+					<p>Care</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/enterprise.webp" alt="Enterprise Logo">
+					<p>Enterprise</p>
+				</a></li>
+				<li><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/pro2.webp" alt="Product Picture of the Insta360 Pro 2">
+					<p>Insta360 Pro 2</p>
+				</a></li>
+				<li id="productCarouselRight"><a href=".">
+					<p>NEW</p><img src="/images/productCarousel/titan.webp" alt="Product Picture of the Titan">
+					<p>Titan</p>
+				</a></li>
+			</ul>
+			<a href="#productCarouselRight" class="arrow"><img src="/images/icons/arrowIcon.png"><span></span></a>
+		</section>
 		<section>
-			<nav>
-				<ul>
-					<li><h1>insta360 store</h1></li>
-					<li><a href=".">Consumer</a></li>
-					<li><a href=".">Professional</a></li>
-					<li><a href=".">Accessories</a></li>
-					<li><a href=".">Services</a></li>
-					<li><a href=".">Enterprise</a></li>
-					<li><a href=".">Refurbished</a></li>
-					<li><a href=".">Shop by Interest</a></li>
-					<li><a href=".">[cart]</a></li>
-					<li><a href=".">[account]</a></li>
-				</ul>
-			</nav>
-			<a href=".">test</a>
+			<h2>Shop by Interest</h2>
+			<ul>
+				<li><a>Motorcycling</a></li>
+				<li><a>Water Sports</a></li>
+				<li><a>Biking</a></li>
+				<li><a>Winter Sports</a></li>
+			</ul>
 		</section>
 	</main>
 
