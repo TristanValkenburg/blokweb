@@ -241,5 +241,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   8. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
   9. https://stackoverflow.com/questions/30835168/is-there-an-opposite-css-pseudo-class-to-hover
   10. https://www.w3schools.com/cssref/sel_nth-child.php
+  11. https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/
+  12. https://www.geeksforgeeks.org/how-to-add-shadow-effect-on-hover-to-div-boxes-in-css/
+  13. 
 
 </details>
