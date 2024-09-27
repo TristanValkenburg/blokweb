@@ -117,7 +117,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
 
 
   ### Agenda voor meeting
@@ -164,7 +165,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik ben eindelijk klaar met mijn eerste (en meest complexe) page!
+
+  Hieronder nog wat kleine dingetjes waar ik blij mee ben:
+
+  <img src="readme-images/darkMode.png" width="375px" alt="Dark Mode Code">
+  <img src="readme-images/lightPage.png" width="150px" alt="light page">
+  <img src="readme-images/darkPage.png" width="150px" alt="dark page">
+  Doormiddel van @media heb ik mijn website darkmode user friendly gemaakt. 
+  Zelf gebruik ik Dark Mode altijd wanneer mogelijk, dus hier ben ik wel blij mee. 
+  Ik moest in mijn Stylesheet wat variabelen aanpassen omdat sommige elementen met dezelfde kleur (en dus met dezelfde var) in Light Mode verschillende kleuren kregen in Dark (dus hadden aparte vars noding).
+  In het eerste jaar had ik een App gebouwd met een .js Darkmode Toggle. @media is hier een betere optie voor denk ik nu.
+
+  <img src="readme-images/starRating.png" width="375px" alt="Star Rating System Code">
+  Met deze codesnippit ben ik ook erg blij! Net als al mijn andere code in deze site is dit allemaal zelf geschreven. 
+  Wat ik hier doe is twee spans in elkaar nesten en die over elkaar positioneren met relative en absolute positioning, beide hebben een repeating BG IMG van een zwarte ster. 
+  De width van de parent span is altijd precies genoeg voor 5 BG IMG repeats, 5 sterren dus.
+  De child span heeft een filter die de kleur verandert van zwart naar geel. De breedte van deze span is in procent te definieren.
+  Doormiddel van width: calc(2em * [rating]); op de gekleurde sterren kun je in css een rating invullen en wordt het aantal sterren automatisch aangepast.
+  <img src="readme-images/star46.png" width="150px" alt="demo good rating">
+  <img src="readme-images/star26.png" width="150px" alt="demo bad rating">
+
+
 
 
   ### Agenda voor meeting
@@ -243,6 +265,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   10. https://www.w3schools.com/cssref/sel_nth-child.php
   11. https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/
   12. https://www.geeksforgeeks.org/how-to-add-shadow-effect-on-hover-to-div-boxes-in-css/
-  13. 
+  13. https://stackoverflow.com/questions/18365713/using-auto-in-css-calc
+  14. https://stackoverflow.com/questions/10487292/position-absolute-but-relative-to-parent
+  15. https://stackoverflow.com/questions/74591767/modify-css-variable-in-media-query
 
 </details>
