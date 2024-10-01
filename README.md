@@ -297,12 +297,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Deze sterren ben ik ook blij mee! Ik had ervoor gekozen om mijn code te futureproofen en geen statische .png's te gebruiken. deze sterren zijn heel makkelijk aan te passen met 1 line in CSS, geen photoshop of Illustrator! <br>
   <img src="readme-images/star46.png" width="200px" alt="demo good rating">
   <img src="readme-images/star26.png" width="200px" alt="demo bad rating"><br>
-  - Voor mijn website heb ik veel arrow linkjes en knoppeb gebruikt. Met uitzondering van wat specifieke tweaks hier en daar zijn ze allemaal met dezelfde flexiebele code gestijld.
+  - Voor mijn website heb ik veel arrow linkjes en knoppeb gebruikt. Met uitzondering van wat specifieke tweaks hier en daar zijn ze allemaal met dezelfde flexiebele code gestijld. <br>
   <img src="readme-images/arrow.png" width="100px" alt="arrowtje">
 
   ### Dit was lastig/Is niet gelukt:
   - wat mij niet is gelukt is het responsove maken van de website. Op de tweede pagina was het heel makkelijk om de code te schrijven om de elementen in landscape mode te positioneren, maar het lukte me voor geen goud om de @media query te laten doen wat 'ie moest, en ik snap niet hoe. In eerste pagina heb ik niet veel tijd gestoken om 'm responsive te maken, aangezien het me simpelweg niet lukt om de code te activeren. Ik had besloten om mijn tijd te gebruiken om wat extra surface plane features toe te voegen. <br>
-  <img src="readme-images/page1Ss1.png" width="375px" alt="bummer">
+  <img src="readme-images/page1Ss1.png" width="375px" alt="bummer"><br>
   - Iets wat me echt heel erg tegenviel was hoe veel tijd het mij kostte om te coderen. Soms voelde het als een soort bodemloze put waar ik uur na uur na uur in gooide zonder ook maar iets waardevols terug te krijgen. Dit zal wenning en oefening vergen om te verhelpen.
 
 
